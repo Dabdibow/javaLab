@@ -1,0 +1,69 @@
+POST http://localhost/login
+Content-Type: application/json
+
+{
+  "email": "sidikov.marsel@gmail.com",
+  "password": "qwerty007"
+}
+
+###
+
+GET http://localhost:80/teachers
+X-TOKEN: 2cacb1b6-3867-4a33-8ccd-46ec2576df
+
+###
+
+POST http://localhost/teachers
+Content-Type: application/json
+
+{
+  "firstName": "Марсель",
+  "lastName": "Сидиков"
+}
+
+###
+
+POST http://localhost/teachers
+Content-Type: application/json
+
+{
+  "firstName": "Михаил",
+  "lastName": "Абрамский"
+}
+
+###
+
+PUT http://localhost/teachers/1
+Content-Type: application/json
+
+{
+  "firstName": "Марсель",
+  "lastName": "Ситдиков"
+}
+
+###
+
+DELETE http://localhost/teachers/1
+
+###
+
+GET http://localhost:8080/courses
+
+###
+
+POST http://localhost/courses
+Content-Type: application/json
+
+{
+  "title": "Информатика"
+}
+
+###
+
+POST http://localhost/courses/1/teachers
+Content-Type: application/json
+
+{
+  "id": 1
+}
+

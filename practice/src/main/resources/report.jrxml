@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report_4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a2d86326-7547-4260-b1b8-8de679f527b0">
+
+    <field name="course" class="java.lang.String">
+    </field>
+    <field name="pupil" class="java.lang.String">
+    </field>
+    <field name="teacher" class="java.lang.String">
+    </field>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="79" splitType="Stretch">
+            <staticText>
+                <reportElement x="140" y="30" width="300" height="31" uuid="f92fa857-c2b0-4bde-bc2b-c47d96437f7d"/>
+                <textElement>
+                    <font size="22"/>
+                </textElement>
+                <text><![CDATA[Отчёт по летней практике]]></text>
+            </staticText>
+        </band>
+    </title>
+    <pageHeader>
+        <band height="67" splitType="Stretch">
+            <textField>
+                <reportElement x="190" y="20" width="180" height="41" uuid="10498482-b4a7-4f67-8d52-63cef6a1ebef"/>
+                <textElement>
+                    <font size="22"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{course}]]></textFieldExpression>
+            </textField>
+        </band>
+    </pageHeader>
+    <columnHeader>
+        <band height="61" splitType="Stretch"/>
+    </columnHeader>
+    <detail>
+        <band height="196" splitType="Stretch">
+            <textField>
+                <reportElement x="380" y="100" width="190" height="31" uuid="f65f776c-55d4-4dcd-b8f4-21e9cb2b3adb"/>
+                <textElement>
+                    <font size="16"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{pupil}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="380" y="140" width="190" height="41" uuid="010f15ab-9996-441f-9b2b-03aa5e8f85e2"/>
+                <textElement>
+                    <font size="16"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{teacher}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <columnFooter>
+        <band height="45" splitType="Stretch"/>
+    </columnFooter>
+    <pageFooter>
+        <band height="54" splitType="Stretch"/>
+    </pageFooter>
+    <summary>
+        <band height="42" splitType="Stretch"/>
+    </summary>
+</jasperReport>
+
